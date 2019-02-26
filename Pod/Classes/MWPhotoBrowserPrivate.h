@@ -11,6 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "MWGridViewController.h"
 #import "MWZoomingScrollView.h"
+#import "MWAccessiblePagingScrollView.h"
 
 // Declare private methods of browser
 @interface MWPhotoBrowser () {
@@ -22,7 +23,7 @@
 	NSArray *_fixedPhotosArray; // Provided via init
 	
 	// Views
-	UIScrollView *_pagingScrollView;
+	MWAccessiblePagingScrollView *_pagingScrollView;
 	
 	// Paging & layout
 	NSMutableSet *_visiblePages, *_recycledPages;
