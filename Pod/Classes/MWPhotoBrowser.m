@@ -1617,11 +1617,16 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
 }
 
 - (BOOL)isAccessibilityFeatureEnabled {
-    return UIAccessibilityIsVoiceOverRunning()
-    || UIAccessibilityIsAssistiveTouchRunning()
-    || UIAccessibilityIsReduceMotionEnabled()
-    || UIAccessibilityIsSpeakScreenEnabled()
-    || UIAccessibilityIsGuidedAccessEnabled();
+    if (@available(iOS 10.0, *)) {
+		return UIAccessibilityIsVoiceOverRunning()
+		|| UIAccessibilityIsSpeakScreenEnabled()
+		|| UIAccessibilityIsSwitchControlRunning()
+		|| UIAccessibilityIsAssistiveTouchRunning();
+	} else {
+		return UIAccessibilityIsVoiceOverRunning()
+		|| UIAccessibilityIsSpeakScreenEnabled()
+		|| UIAccessibilityIsSwitchControlRunning();
+	}
 }
 
 #pragma mark - Actions
