@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MWPhotoBrowser
+
+  Created by Kevin HIRSCH on 11/02/2020.
+  Copyright © 2020 Michael Waterfall. All rights reserved.
+*/
+
+"photo"="photo";
+"photos"="photos";
+"of"="of";

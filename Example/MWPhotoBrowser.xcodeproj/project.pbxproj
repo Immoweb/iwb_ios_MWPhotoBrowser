@@ -86,6 +86,7 @@
 		A644771522253C1500971A6B /* ImageSelectedOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A64476E922253C1500971A6B /* ImageSelectedOn@2x.png */; };
 		A644771622253C1500971A6B /* ImageSelectedSmallOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A64476EA22253C1500971A6B /* ImageSelectedSmallOn@2x.png */; };
 		A644771922253C4C00971A6B /* MWAccessiblePagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A644771822253C4C00971A6B /* MWAccessiblePagingScrollView.m */; };
+		A674B19823F3072F003575BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A674B19A23F3072F003575BA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,7 +123,7 @@
 		4C18E1181B47E72800E3D63A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C18E1191B47E72800E3D63A /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		4C18E11A1B47E72800E3D63A /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
-		4E0A14EFB687307A0833E979 /* MWPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MWPhotoBrowser.podspec; path = ../MWPhotoBrowser.podspec; sourceTree = "<group>"; };
+		4E0A14EFB687307A0833E979 /* MWPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MWPhotoBrowser.podspec; path = ../MWPhotoBrowser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		55A83EA8917E977913C69084 /* libPods-MWPhotoBrowser_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWPhotoBrowser_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		562FC83939C7F261FFC634F3 /* Pods-MWPhotoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWPhotoBrowser_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWPhotoBrowser_Tests/Pods-MWPhotoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MWPhotoBrowser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWPhotoBrowser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +200,9 @@
 		A64476EA22253C1500971A6B /* ImageSelectedSmallOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOn@2x.png"; sourceTree = "<group>"; };
 		A644771722253C4C00971A6B /* MWAccessiblePagingScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWAccessiblePagingScrollView.h; sourceTree = "<group>"; };
 		A644771822253C4C00971A6B /* MWAccessiblePagingScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWAccessiblePagingScrollView.m; sourceTree = "<group>"; };
+		A674B19923F3072F003575BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A674B19B23F307D4003575BA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A674B19C23F307DB003575BA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ADF3E55AED66950C41760420 /* libPods-MWPhotoBrowser_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWPhotoBrowser_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C85CB7FE89F584D392C9CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D619837C560AF3F58C53FFFA /* Pods-MWPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWPhotoBrowser_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWPhotoBrowser_Example/Pods-MWPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -430,6 +434,7 @@
 				A64476E822253C1500971A6B /* ImageSelectedOn@3x.png */,
 				A64476E922253C1500971A6B /* ImageSelectedOn@2x.png */,
 				A64476EA22253C1500971A6B /* ImageSelectedSmallOn@2x.png */,
+				A674B19A23F3072F003575BA /* Localizable.strings */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -500,8 +505,11 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				fr,
+				nl,
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -535,6 +543,7 @@
 				A64476F522253C1500971A6B /* UIBarButtonItemArrowLeft.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				0EC5D4BD1B4C46E50092ACC1 /* photo5.jpg in Resources */,
+				A674B19823F3072F003575BA /* Localizable.strings in Resources */,
 				A644771122253C1500971A6B /* UIBarButtonItemArrowRight@2x.png in Resources */,
 				A644771522253C1500971A6B /* ImageSelectedOn@2x.png in Resources */,
 				A644770922253C1500971A6B /* PlayButtonOverlayLarge@2x.png in Resources */,
@@ -717,6 +726,16 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A674B19A23F3072F003575BA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A674B19923F3072F003575BA /* en */,
+				A674B19B23F307D4003575BA /* fr */,
+				A674B19C23F307DB003575BA /* nl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
