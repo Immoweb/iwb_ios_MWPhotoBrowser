@@ -27,7 +27,8 @@
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "MWPhotoBrowser": [
-      "Pod/Assets/*.png"
+      "Pod/Assets/*.png",
+      "Pod/Assets/*.lproj/*.strings"
     ]
   },
   "requires_arc": true,

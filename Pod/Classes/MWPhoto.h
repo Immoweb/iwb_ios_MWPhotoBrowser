@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Photos/Photos.h>
 #import "MWPhotoProtocol.h"
+#import <SDWebImage/SDWebImageDefine.h>
 
 // This class models a photo/image and it's caption
 // If you want to handle photos, caching, decompression
@@ -20,6 +21,7 @@
 @property (nonatomic, strong) NSURL *videoURL;
 @property (nonatomic) BOOL emptyImage;
 @property (nonatomic) BOOL isVideo;
+@property (nonatomic, nullable) SDWebImageContext *context;
 
 + (MWPhoto *)photoWithImage:(UIImage *)image;
 + (MWPhoto *)photoWithURL:(NSURL *)url;
