@@ -28,17 +28,16 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.platform = :ios, '9.0'
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Sources/MWPhotoBrowser/**/*.{h,m}'
   s.resource_bundles = {
-    'MWPhotoBrowser' => ['Pod/Assets/*.png', 'Pod/Assets/*.lproj/*.strings']
+    'MWPhotoBrowser' => ['Sources/MWPhotoBrowser/Resources/Media.xcassets', 'Sources/MWPhotoBrowser/Resources/*.lproj/*.strings']
   }
   s.requires_arc = true
 
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
 
-  s.dependency 'MBProgressHUD', '~> 0.9'
-  s.dependency 'DACircularProgress', '~> 2.3'
+  s.dependency 'MBProgressHUD', '~> 1.2'
   s.dependency 'SDWebImage'
 
 end
